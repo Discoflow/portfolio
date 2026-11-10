@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "experience.type1": "DOCTORAT",
       "experience.job1": "Docteur en chimie des matériaux",
       "experience.desc1": "Développement et caractérisation de matériaux Al–N–H dérivés de l'ammonia alane pour le stockage chimique de l'hydrogène.",
-      "experience.bullet1": "Conception et conduite autonome d'un programme expérimental, de la synthèse à l'interprétation des résultats.",
+      "experience.bullet1": "Conception et conduite autonome d'un programme expérimental : définition des priorités, planification des essais, organisation des campagnes de caractérisation et analyse des résultats.",
       "experience.bullet2": "Développement de trois stratégies de synthèse : réaction acide-base de Lewis, métathèse et broyage cryogénique.",
       "experience.bullet3": "Caractérisation multi-technique et étude des environnements chimiques et structuraux.",
       "experience.bullet4": "Initiation d'une collaboration scientifique avec le CEA Saclay, à l'origine de deux publications.",
@@ -188,8 +188,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "projects.radioTitle": "Radioactivité et environnement : solubilité des phases uranifères",
       "projects.radioSummary": "Projet tutoré consacré à la présence naturelle des radionucléides dans l'environnement et à l'étude bibliographique des phases uranifères et thorifères.",
       "projects.radioContext": "La radioactivité naturelle est omniprésente dans l'environnement. L'étude bibliographique a porté sur les principales familles radioactives, notamment les séries associées aux isotopes ²³⁸U, ²³⁵U et ²³²Th, ainsi que sur les mécanismes de désintégration alpha et bêta conduisant à des isotopes plus stables.",
-      "projects.radioObjectives": "Le travail a également consisté à étudier les différentes phases naturelles de l'uranium et du thorium, leurs localisations et leurs abondances. Une campagne de prélèvements était envisagée autour de la mine de Puech Buissou, en amont et en aval du site, ainsi que sur plusieurs sites : le Rhône, la plage de l'Espiguette dans le Gard et le Collet-de-Dèze en Lozère.",
-      "projects.radioMethods": "Le protocole prévoyait la caractérisation d'échantillons liquides et solides par scintillation liquide alpha de type PERALS et par spectroscopie infrarouge. Le projet s'inscrivait dans une démarche d'analyse environnementale, avec des analyses associées au site du CEA Marcoule.",
+      "projects.radioObjectives": "Le travail a consisté à étudier les différentes phases naturelles de l'uranium et du thorium, leurs localisations et leurs abondances. Une campagne de prélèvements a été effectuée autour de la mine de Puech Buissou, en amont et en aval du site, ainsi que sur plusieurs sites : la plage de l'Espiguette dans le Gard et le Collet-de-Dèze en Lozère.",
+      "projects.radioMethods": "Le protocole prévoyait la caractérisation d'échantillons liquides et solides par scintillation liquide alpha de type PERALS et par spectroscopie infrarouge. Le projet s'inscrivait dans une démarche d'analyse environnementale, avec des analyses faites au site du CEA Marcoule.",
       "projects.radioStatus": "Projet tutoré : étude bibliographique et définition d'une démarche expérimentale. Les prélèvements et résultats analytiques ne sont pas présentés ici comme des travaux réalisés.",
 
       "projects.coatingTitle": "Revêtements polymères superhydrophobes pour les vitrages de cockpit",
@@ -356,7 +356,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "projects.financeSummary": "Development of an application to monitor and analyse an investment portfolio, with centralised financial data and performance indicators.",
 
       "education.eyebrow": "EDUCATION",
-      "education.heading": "A multidisciplinary<br><em>scientific foundation.</em>",
+      "education.heading": "My scientific<br><em>foundation.</em>",
       "education.degree1": "PhD in Materials Chemistry",
       "education.detail1": "Development of Al–N–H materials for chemical hydrogen storage.",
       "education.degree2": "Master's degree in Chemistry and Materials Science",
