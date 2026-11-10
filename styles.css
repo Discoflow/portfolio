@@ -1833,72 +1833,55 @@ img {
     color: var(--experience-place-color);
 }
 
+
 /* =========================================================
-   19. ACCUEIL — INTÉGRATION DE LA STRUCTURE CRISTALLINE
+   19. ACCUEIL — BACKGROUND CRISTALLIN PLEINE LARGEUR
 ========================================================= */
 
-.hero {
+#accueil.hero {
     position: relative;
     isolation: isolate;
-    overflow: hidden;
-}
 
-/* Image cristalline en arrière-plan */
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
+    /* La section occupe toute la largeur */
+    width: 100%;
+    max-width: none;
+    margin-inline: 0;
 
-    background-image: url("hero-crystal.png");
+    /* Conservation de l'alignement du contenu */
+    padding-left: max(48px, calc((100vw - var(--page-width)) / 2));
+    padding-right: max(48px, calc((100vw - var(--page-width)) / 2));
+
+    background-color: var(--bg);
+
+    /* Image et dégradé intégrés directement au fond */
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0, 23, 31, 0.25) 0%,
+            rgba(0, 23, 31, 0.08) 45%,
+            rgba(0, 23, 31, 0.12) 100%
+        ),
+        url("hero-crystal.png");
+
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-position: right center;
-    background-size: auto 110%;
-
-    opacity: 0.85;
-
-    /* Fondu progressif vers la gauche */
-    -webkit-mask-image: linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(0, 0, 0, 0.15) 28%,
-        rgba(0, 0, 0, 0.8) 55%,
-        black 75%
-    );
-
-    mask-image: linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(0, 0, 0, 0.15) 28%,
-        rgba(0, 0, 0, 0.8) 55%,
-        black 75%
-    );
-}
-
-/* Le contenu reste au premier plan */
-.hero > * {
-    position: relative;
-    z-index: 1;
 }
 
 /* Adaptation mobile */
 @media (max-width: 760px) {
-    .hero::before {
-        background-size: auto 65%;
-        background-position: right bottom;
-        opacity: 0.35;
+    #accueil.hero {
+        padding-left: 21px;
+        padding-right: 21px;
 
-        -webkit-mask-image: linear-gradient(
-            to right,
-            transparent 0%,
-            black 75%
-        );
+        background-position: 62% center;
 
-        mask-image: linear-gradient(
-            to right,
-            transparent 0%,
-            black 75%
-        );
+        background-image:
+            linear-gradient(
+                rgba(0, 23, 31, 0.45),
+                rgba(0, 23, 31, 0.55)
+            ),
+            url("hero-crystal.png");
     }
 }
+
