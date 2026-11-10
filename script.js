@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "skills.structureTitle": "Analyses structurales et microscopie",
       "skills.thermalTitle": "Analyses thermiques et gazeuses",
       "skills.adsorptionTitle": "Porosité et adsorption",
-      "skills.softwareLabel": "ENVIRONNEMENT LOGICIEL",
+      "skills.softwareLabel": "LOGICIELS",
       "skills.legend": "Indicateurs : niveau de pratique déclaré, sur une échelle de 1 à 5.",
 
       "projects.eyebrow": "PROJETS & RÉALISATIONS",
