@@ -136,7 +136,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       "experience.eyebrow": "EXPÉRIENCE PROFESSIONNELLE",
       "experience.heading": "Mes expériences<br>",
-      "experience.intro": "Des travaux de recherche et de développement menés en laboratoire, autour de la synthèse, de la caractérisation et de l'étude de matériaux fonctionnels.",
       "experience.type1": "DOCTORAT",
       "experience.job1": "Docteur en chimie des matériaux",
       "experience.desc1": "Développement et caractérisation de matériaux Al–N–H dérivés de l'ammonia alane pour le stockage chimique de l'hydrogène.",
@@ -221,7 +220,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       "publications.eyebrow": "PRODUCTION SCIENTIFIQUE",
       "publications.heading": "Partager et<br><em>transmettre les résultats.</em>",
-      "publications.intro": "Trois publications dans l'International Journal of Hydrogen Energy autour des matériaux Al–N–H dérivés de l'ammonia alane.",
       "publications.review": "ARTICLE DE SYNTHÈSE",
       "publications.article": "ARTICLE DE RECHERCHE",
       "publications.paper2": "Al–N–H compounds derived from ammonia alane: Synthesis strategies and characterization",
@@ -275,7 +273,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       "experience.eyebrow": "PROFESSIONAL EXPERIENCE",
       "experience.heading": "A career shaped<br><em>by experimental research.</em>",
-      "experience.intro": "Research and development carried out in laboratory environments, focusing on the synthesis, characterisation and investigation of functional materials.",
       "experience.type1": "PHD",
       "experience.job1": "PhD Researcher in Materials Chemistry",
       "experience.desc1": "Development and characterisation of Al–N–H materials derived from ammonia alane for chemical hydrogen storage.",
@@ -360,7 +357,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       "publications.eyebrow": "SCIENTIFIC OUTPUT",
       "publications.heading": "Sharing and<br><em>communicating research.</em>",
-      "publications.intro": "Three publications in the International Journal of Hydrogen Energy on Al–N–H materials derived from ammonia alane.",
       "publications.review": "REVIEW ARTICLE",
       "publications.article": "RESEARCH ARTICLE",
       "publications.paper2": "Al–N–H compounds derived from ammonia alane: Synthesis strategies and characterization",
