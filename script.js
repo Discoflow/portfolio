@@ -227,7 +227,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "publications.note": "Les références bibliographiques complètes seront ajoutées après vérification des métadonnées éditoriales.",
 
       "interests.eyebrow": "AU-DELÀ DU LABORATOIRE",
-      "interests.heading": "Une curiosité qui<br><em>ne s'arrête pas à la science.</em>",
+      "interests.heading": "Une curiosité qui<br><em>ne s'arrête pas à la chimie.</em>",
       "interests.sport": "Sports",
       "interests.science": "Sciences",
       "interests.astronomy": "Astronomie",
@@ -364,7 +364,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "publications.note": "Full bibliographic references will be added after verification of the editorial metadata.",
 
       "interests.eyebrow": "BEYOND THE LABORATORY",
-      "interests.heading": "A curiosity that<br><em>extends beyond science.</em>",
+      "interests.heading": "A curiosity that<br><em>extends beyond chemistry.</em>",
       "interests.sport": "Sports",
       "interests.science": "Science",
       "interests.astronomy": "Astronomy",
