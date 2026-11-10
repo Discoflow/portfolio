@@ -589,34 +589,42 @@ document.addEventListener("DOMContentLoaded", () => {
      07. DÉTAILS DES PROJETS
   ======================================================= */
 
-  const projectButtons = document.querySelectorAll(".project-toggle");
 
-  projectButtons.forEach((button) => {
+  /* =======================================================
+     07. DÉTAILS DES PROJETS
+  ======================================================= */
+
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest(".project-toggle");
+
+    if (!button) return;
+
     const targetId = button.dataset.target;
     const target = document.getElementById(targetId);
 
-    if (!target) return;
+    if (!target) {
+      console.warn("Contenu du projet introuvable :", targetId);
+      return;
+    }
 
-    button.addEventListener("click", () => {
-      const isExpanded = button.getAttribute("aria-expanded") === "true";
-      const nextState = !isExpanded;
+    const isExpanded = button.getAttribute("aria-expanded") === "true";
+    const nextState = !isExpanded;
 
-      button.setAttribute("aria-expanded", String(nextState));
-      target.hidden = !nextState;
+    button.setAttribute("aria-expanded", String(nextState));
+    target.toggleAttribute("hidden", !nextState);
 
-      const textElement = button.querySelector("span:first-child");
-      const iconElement = button.querySelector("span:last-child");
+    const textElement = button.querySelector("span:first-child");
+    const iconElement = button.querySelector("span:last-child");
 
-      if (textElement) {
-        textElement.textContent = nextState
-          ? translations[currentLanguage]["projects.hideDetails"]
-          : translations[currentLanguage]["projects.details"];
-      }
+    if (textElement) {
+      textElement.textContent = nextState
+        ? translations[currentLanguage]["projects.hideDetails"]
+        : translations[currentLanguage]["projects.details"];
+    }
 
-      if (iconElement) {
-        iconElement.textContent = nextState ? "−" : "＋";
-      }
-    });
+    if (iconElement) {
+      iconElement.textContent = nextState ? "−" : "＋";
+    }
   });
 
 
