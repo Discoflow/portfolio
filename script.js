@@ -131,14 +131,14 @@ document.addEventListener("DOMContentLoaded", () => {
       "hero.value3": "Curiosité et polyvalence",
 
       "about.eyebrow": "PRÉSENTATION",
-      "about.heading": "Un parcours scientifique,<br><em>une curiosité ouverte sur le monde.</em>",
+      "about.heading": "Comprendre le monde,<br><em>puis explorer.</em>",
       "about.lead": "Docteur en chimie des matériaux, mon parcours m'a conduit à explorer différentes problématiques scientifiques, de la synthèse de matériaux fonctionnels à leur caractérisation avancée.",
       "about.p1": "L'autonomie et la rigueur constituent le socle de mon approche scientifique. La conduite de travaux expérimentaux, l'analyse critique des résultats et la recherche de solutions face aux difficultés rencontrées ont façonné ma manière de travailler.",
       "about.p2": "Curieux et polyvalent, je souhaite continuer à élargir mon champ de compétences et découvrir de nouveaux domaines scientifiques et technologiques. Je ne cherche pas à me limiter à une spécialité, mais à m'investir dans des projets ambitieux, à la croisée de plusieurs disciplines.",
       "about.p3": "Ce qui me motive avant tout est de contribuer à un projet qui a une utilité réelle : développer une solution, faire progresser une technologie ou répondre à un besoin concret, qu'il soit industriel ou sociétal.",
 
       "experience.eyebrow": "EXPÉRIENCE PROFESSIONNELLE",
-      "experience.heading": "Un parcours construit<br><em>dans l'expérimentation.</em>",
+      "experience.heading": "Mes expériences<br>",
       "experience.intro": "Des travaux de recherche et de développement menés en laboratoire, autour de la synthèse, de la caractérisation et de l'étude de matériaux fonctionnels.",
       "experience.type1": "DOCTORAT",
       "experience.job1": "Docteur en chimie des matériaux",
@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "experience.bullet7": "Synthèse et caractérisation par RMN liquide, FTIR, ATG-MS, DSC et UV-Visible.",
 
       "skills.eyebrow": "COMPÉTENCES",
-      "skills.heading": "Une pratique expérimentale<br><em>au service des matériaux.</em>",
+      "skills.heading": "Savoir-faire<br><em>scientifique.</em>",
       "skills.intro": "Synthèse, caractérisation et analyse : des compétences développées au cours de travaux expérimentaux en chimie des matériaux.",
       "skills.catSynthesis": "ÉLABORATION",
       "skills.synthesisTitle": "Synthèse et développement de matériaux",
@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "skills.legend": "Indicateurs : niveau de pratique déclaré, sur une échelle de 1 à 5.",
 
       "projects.eyebrow": "PROJETS & RÉALISATIONS",
-      "projects.heading": "Explorer différentes disciplines,<br><em>construire des solutions.</em>",
+      "projects.heading": "Explorer différentes disciplines.<br>",
       "projects.intro": "Des projets académiques et personnels qui illustrent la diversité des problématiques abordées au cours de mon parcours.",
       "projects.academic": "PROJETS SCIENTIFIQUES ET ACADÉMIQUES",
       "projects.personal": "PROJETS PERSONNELS ET NUMÉRIQUES",
@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "projects.financeSummary": "Développement d'une application de suivi et d'analyse d'un portefeuille d'investissement, avec centralisation des données financières et indicateurs de suivi.",
 
       "education.eyebrow": "FORMATION",
-      "education.heading": "Un socle scientifique<br><em>pluridisciplinaire.</em>",
+      "education.heading": "Mon socle scientifique<br>",
       "education.degree1": "Doctorat en chimie des matériaux",
       "education.detail1": "Développement de matériaux Al–N–H pour le stockage chimique de l'hydrogène.",
       "education.degree2": "Master Chimie et Sciences des matériaux",
@@ -227,8 +227,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "publications.intro": "Trois publications dans l'International Journal of Hydrogen Energy autour des matériaux Al–N–H dérivés de l'ammonia alane.",
       "publications.review": "ARTICLE DE SYNTHÈSE",
       "publications.article": "ARTICLE DE RECHERCHE",
-      "publications.paper2": "Article de recherche issu de la collaboration avec le CEA Saclay",
-      "publications.paper3": "Article de recherche issu de la collaboration avec le CEA Saclay",
+      "publications.paper2": "Al–N–H compounds derived from ammonia alane: Synthesis strategies and characterization",
+      "publications.paper3": "Al−N−H compounds derived from ammonia alane: Solid-state NMR study of dehydrogenation-induced polymeric phases",
       "publications.note": "Les références bibliographiques complètes seront ajoutées après vérification des métadonnées éditoriales.",
 
       "interests.eyebrow": "AU-DELÀ DU LABORATOIRE",
@@ -369,8 +369,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "publications.intro": "Three publications in the International Journal of Hydrogen Energy on Al–N–H materials derived from ammonia alane.",
       "publications.review": "REVIEW ARTICLE",
       "publications.article": "RESEARCH ARTICLE",
-      "publications.paper2": "Research article resulting from the collaboration with CEA Saclay",
-      "publications.paper3": "Research article resulting from the collaboration with CEA Saclay",
+      "publications.paper2": "Al–N–H compounds derived from ammonia alane: Synthesis strategies and characterization",
+      "publications.paper3": "Al−N−H compounds derived from ammonia alane: Solid-state NMR study of dehydrogenation-induced polymeric phases",
       "publications.note": "Full bibliographic references will be added after verification of the editorial metadata.",
 
       "interests.eyebrow": "BEYOND THE LABORATORY",
