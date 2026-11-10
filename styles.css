@@ -1891,7 +1891,7 @@ img {
 
 /* Docteur en chimie des matériaux */
 .hero .hero-kicker {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 /* POSTE RECHERCHÉ */
@@ -1907,15 +1907,15 @@ img {
 /* Adaptation mobile */
 @media (max-width: 760px) {
     .hero .hero-kicker {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .hero .hero-position-label {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .hero .hero-position-title {
-        font-size: 17px;
+        font-size: 19px;
     }
 }
 
