@@ -482,8 +482,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  updateLanguage(currentLanguage);
-
 
   /* =======================================================
      04. CORRECTION DU LIEN E-MAIL
@@ -517,6 +515,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.getElementById("menu-toggle");
   const mainNav = document.getElementById("main-nav");
 
+   updateLanguage(currentLanguage);
+   
   function updateMenuAccessibility() {
     if (!menuToggle) return;
 
