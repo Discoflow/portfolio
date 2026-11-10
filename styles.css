@@ -1832,3 +1832,73 @@ img {
 .timeline-item:nth-child(2) .timeline-place {
     color: var(--experience-place-color);
 }
+
+/* =========================================================
+   19. ACCUEIL — INTÉGRATION DE LA STRUCTURE CRISTALLINE
+========================================================= */
+
+.hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+/* Image cristalline en arrière-plan */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+
+    background-image: url("hero-crystal.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 110%;
+
+    opacity: 0.85;
+
+    /* Fondu progressif vers la gauche */
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(0, 0, 0, 0.15) 28%,
+        rgba(0, 0, 0, 0.8) 55%,
+        black 75%
+    );
+
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(0, 0, 0, 0.15) 28%,
+        rgba(0, 0, 0, 0.8) 55%,
+        black 75%
+    );
+}
+
+/* Le contenu reste au premier plan */
+.hero > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Adaptation mobile */
+@media (max-width: 760px) {
+    .hero::before {
+        background-size: auto 65%;
+        background-position: right bottom;
+        opacity: 0.35;
+
+        -webkit-mask-image: linear-gradient(
+            to right,
+            transparent 0%,
+            black 75%
+        );
+
+        mask-image: linear-gradient(
+            to right,
+            transparent 0%,
+            black 75%
+        );
+    }
+}
