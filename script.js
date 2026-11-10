@@ -126,9 +126,6 @@ document.addEventListener("DOMContentLoaded", () => {
       "hero.age": "28 ans",
       "hero.targetLabel": "POSTE RECHERCHÉ",
       "hero.target": "Ingénieur Matériaux – R&D",
-      "hero.value1": "Rigueur scientifique",
-      "hero.value2": "Autonomie expérimentale",
-      "hero.value3": "Curiosité et polyvalence",
 
       "about.eyebrow": "PRÉSENTATION",
       "about.heading": "Comprendre le monde,<br><em>puis explorer.</em>",
@@ -268,9 +265,6 @@ document.addEventListener("DOMContentLoaded", () => {
       "hero.age": "28 years old",
       "hero.targetLabel": "TARGET POSITION",
       "hero.target": "Materials Engineer – R&D",
-      "hero.value1": "Scientific rigour",
-      "hero.value2": "Experimental autonomy",
-      "hero.value3": "Curiosity and versatility",
 
       "about.eyebrow": "ABOUT",
       "about.heading": "A scientific background,<br><em>with an open-minded curiosity.</em>",
