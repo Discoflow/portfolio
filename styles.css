@@ -29,7 +29,12 @@
   --header-height: 82px;
 
   --ease: cubic-bezier(.22, .61, .36, 1);
-}
+    /* Personnalisation des couleurs du portfolio */
+    --hero-name-color: #EFC88B;
+    --skills-number-color: #E5B25D;
+    --skills-label-color: #E5B25D;
+    --experience-role-color: #EFC88B;
+    --experience-place-color: #E5B25D;}
 
 * {
   box-sizing: border-box;
@@ -1798,4 +1803,32 @@ img {
     transform: none !important;
     transition: none !important;
   }
+}
+/* =======================================================
+   PERSONNALISATION DES COULEURS
+   Modifier uniquement les codes hexadécimaux dans :root
+======================================================= */
+
+/* Nom : VINCENT */
+.hero h1 em {
+    color: var(--hero-name-color);
+}
+
+/* Section 03 : COMPÉTENCES */
+#competences .section-number {
+    color: var(--skills-number-color);
+}
+
+#competences .eyebrow {
+    color: var(--skills-label-color);
+}
+
+/* Expérience professionnelle : intitulé du poste */
+.timeline-item:nth-child(2) .timeline-content h3 {
+    color: var(--experience-role-color);
+}
+
+/* Expérience professionnelle : établissement */
+.timeline-item:nth-child(2) .timeline-place {
+    color: var(--experience-place-color);
 }
