@@ -1885,3 +1885,37 @@ img {
     }
 }
 
+/* =========================================================
+   AGRANDISSEMENT DES TEXTES DE L'ACCUEIL
+========================================================= */
+
+/* Docteur en chimie des matériaux */
+.hero .hero-kicker {
+    font-size: 16px;
+}
+
+/* POSTE RECHERCHÉ */
+.hero .hero-position-label {
+    font-size: 12px;
+}
+
+/* Ingénieur Matériaux – R&D */
+.hero .hero-position-title {
+    font-size: 20px;
+}
+
+/* Adaptation mobile */
+@media (max-width: 760px) {
+    .hero .hero-kicker {
+        font-size: 13px;
+    }
+
+    .hero .hero-position-label {
+        font-size: 10px;
+    }
+
+    .hero .hero-position-title {
+        font-size: 17px;
+    }
+}
+
