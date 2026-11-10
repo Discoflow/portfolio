@@ -1667,3 +1667,74 @@ img {
     transform: none;
   }
 }
+
+
+/* =========================================================
+   18. CORRECTIONS DE VISIBILITÉ ET IDENTITÉ VISUELLE
+   Ces règles priment sur les styles précédents.
+========================================================= */
+
+/* Nom : MAXENCE en ivoire, VINCENT en or et en italique. */
+.hero h1 {
+  color: var(--text);
+}
+
+.hero h1 em {
+  color: var(--title);
+  font-style: italic;
+}
+
+/* Les titres de section conservent le traitement éditorial de la V1. */
+.section-heading h2,
+.contact-content h2 {
+  color: var(--title);
+}
+
+.section-heading h2 em,
+.contact-content h2 em {
+  color: var(--title);
+  font-style: italic;
+}
+
+/* Seule la couleur des intitulés de familles de compétences est ciblée. */
+.skill-family-heading h3 {
+  color: var(--title);
+}
+
+/*
+ * Sécurité essentielle :
+ * les éléments .reveal restent toujours visibles, même si l'observateur
+ * JavaScript ne se déclenche pas. Seule leur position peut être animée.
+ */
+.js-enabled .reveal {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(12px);
+  transition: transform .65s var(--ease);
+}
+
+.js-enabled .reveal.is-visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0);
+}
+
+/* Les contenus de la frise et des projets ne peuvent plus disparaître. */
+.timeline-item,
+.timeline-content,
+.project-item,
+.project-main {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Respect du réglage système de réduction des animations. */
+@media (prefers-reduced-motion: reduce) {
+  .js-enabled .reveal,
+  .js-enabled .reveal.is-visible {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
