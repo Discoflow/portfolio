@@ -1738,3 +1738,64 @@ img {
     transition: none !important;
   }
 }
+/* CORRECTION VISIBILITÉ ET COULEURS */
+
+/* Titre principal */
+.hero h1 {
+  color: var(--text);
+}
+
+.hero h1 em {
+  color: var(--title);
+  font-style: italic;
+}
+
+/* Titres des sections */
+.section-heading h2,
+.contact-content h2 {
+  color: var(--title);
+}
+
+.section-heading h2 em,
+.contact-content h2 em {
+  color: var(--title);
+  font-style: italic;
+}
+
+/* Titres des familles de compétences */
+.skill-family-heading h3 {
+  color: var(--title);
+}
+
+/* Éviter que les contenus restent invisibles */
+.js-enabled .reveal {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(12px);
+  transition: transform .65s var(--ease);
+}
+
+.js-enabled .reveal.is-visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0);
+}
+
+.timeline-item,
+.timeline-content,
+.project-item,
+.project-main {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Respect des préférences de réduction des animations */
+@media (prefers-reduced-motion: reduce) {
+  .js-enabled .reveal,
+  .js-enabled .reveal.is-visible {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
