@@ -1,41 +1,48 @@
 
+"use strict";
+
+/* =========================================================
+   TRADUCTIONS
+========================================================= */
+
 const translations = {
   en: {
+    brand: "PROFESSIONAL PORTFOLIO",
+
     "nav.about": "About",
     "nav.experience": "Experience",
     "nav.skills": "Skills",
     "nav.projects": "Projects",
+    "nav.education": "Education",
     "nav.publications": "Publications",
     "nav.contact": "Contact",
-    "nav.letsTalk": "Get in touch",
+    "nav.getInTouch": "Get in touch",
 
-    "hero.eyebrow": "SCIENTIFIC & PROFESSIONAL PORTFOLIO",
-    "hero.status": "Open to new opportunities",
-    "hero.kicker": "PhD in Materials Chemistry",
-    "hero.title": "Understanding matter.<br><em>Moving ideas</em> forward.",
-    "hero.intro": "Materials synthesis, development and characterization. A rigorous scientific approach focused on projects with tangible applications.",
-    "hero.caption": "SCIENCE · MATERIALS · EXPERIMENTATION",
+    "hero.eyebrow": "SCIENCE · MATERIALS · CHEMISTRY",
+    "hero.age": "28 years old",
+    "hero.degree": "PhD in Materials Chemistry",
+    "hero.targetLabel": "TARGET POSITION",
+    "hero.target": "Materials Engineer – R&D",
+    "hero.value1": "Scientific rigour",
+    "hero.value2": "Experimental independence",
+    "hero.value3": "Curiosity and versatility",
 
     "about.eyebrow": "ABOUT",
     "about.heading": "A scientific background,<br><em>an open-minded approach.</em>",
-    "about.lead": "With a PhD in Materials Chemistry, I have developed a scientific approach grounded in rigour, independence and experimentation. My experience spans the synthesis of functional materials and their advanced characterization.",
-    "about.p1": "Curious and versatile, I want to broaden my skill set and become involved in new scientific and technological fields. Rather than limiting myself to one speciality, I aim to put my knowledge and adaptability to work on ambitious projects.",
-    "about.p2": "What motivates me most is contributing to projects that extend beyond research itself: developing a solution, improving a process, advancing a technology or addressing a tangible need.",
-    "about.p3": "Understanding, experimenting, learning and contributing to something with real purpose: this is what gives meaning to my work.",
-    "about.value1": "Scientific rigour",
-    "about.value2": "Experimental independence",
-    "about.value3": "Curiosity and versatility",
-    "about.value4": "Tangible impact",
+    "about.lead": "With a PhD in Materials Chemistry, my background has led me to explore various scientific topics, from the synthesis of functional materials to their advanced characterization.",
+    "about.p1": "Independence and rigour are the foundations of my scientific approach. Conducting experimental work, critically analysing results and finding solutions to experimental challenges have shaped the way I work.",
+    "about.p2": "Curious and versatile, I want to keep broadening my skill set and exploring new scientific and technological fields. Rather than limiting myself to one speciality, I want to become involved in ambitious projects at the intersection of several disciplines.",
+    "about.p3": "What motivates me most is contributing to a project with a real purpose: developing a solution, advancing a technology or addressing a tangible industrial or societal need.",
 
-    "experience.eyebrow": "EXPERIENCE",
+    "experience.eyebrow": "PROFESSIONAL EXPERIENCE",
     "experience.heading": "A background built<br><em>through experimentation.</em>",
-    "experience.intro": "From doctoral research to laboratory work, my experience focuses on materials development and understanding their behaviour.",
+    "experience.intro": "Research and development work carried out in laboratories, focusing on the synthesis, characterization and study of functional materials.",
     "experience.type1": "PHD",
-    "experience.job1": "PhD researcher in Materials Chemistry",
+    "experience.job1": "PhD in Materials Chemistry",
     "experience.desc1": "Development and characterization of Al–N–H materials derived from ammonia alane for chemical hydrogen storage.",
-    "experience.bullet1": "Designed and independently carried out an experimental programme, from synthesis to data interpretation.",
+    "experience.bullet1": "Designed and independently conducted an experimental programme, from synthesis to data interpretation.",
     "experience.bullet2": "Developed three synthesis strategies: Lewis acid–base reaction, metathesis and cryogenic milling.",
-    "experience.bullet3": "Performed multi-technique characterization and investigated relationships between material structure and behaviour.",
+    "experience.bullet3": "Performed multi-technique characterization and investigated chemical and structural environments.",
     "experience.bullet4": "Initiated a scientific collaboration with CEA Saclay, resulting in two publications.",
     "experience.type2": "R&D INTERNSHIP",
     "experience.job2": "Research and Development Intern",
@@ -47,39 +54,63 @@ const translations = {
     "experience.desc3": "Synthesis and characterization of aminoborane-based ceramic materials for hydrogen storage.",
     "experience.bullet7": "Synthesis and characterization using liquid-state NMR, FTIR, TGA-MS, DSC and UV-Vis.",
 
-    "skills.eyebrow": "EXPERTISE",
-    "skills.heading": "Tools to<br><em>explore matter.</em>",
-    "skills.intro": "An experimental approach combining materials development, physico-chemical characterization and critical data analysis.",
-    "skills.s1": "Materials development",
-    "skills.s1desc": "Protocol design, synthesis, purification and optimization of experimental conditions.",
-    "skills.s2": "Physico-chemical analysis",
-    "skills.s2desc": "Multi-technique characterization and cross-analysis to understand material properties.",
-    "skills.s3": "Scientific interpretation",
-    "skills.s3desc": "Data processing, critical analysis, connecting observations and developing hypotheses.",
-    "skills.s4": "Project management",
-    "skills.s4desc": "Experimental planning, prioritization, scientific collaboration and communication of results.",
-    "skills.note": "The skills listed reflect the techniques and methods used throughout my experience. Their level of practice will be specified in a future version.",
+    "skills.eyebrow": "SKILLS",
+    "skills.heading": "Experimental expertise<br><em>applied to materials.</em>",
+    "skills.intro": "Synthesis, characterization and analysis: skills developed through experimental work in materials chemistry.",
+    "skills.catSynthesis": "MATERIALS DEVELOPMENT",
+    "skills.synthesisTitle": "Materials synthesis and development",
+    "skills.synthesisDescription": "Development of synthesis routes, experimental protocols and optimization of experimental conditions.",
+    "skills.nmrDescription": "Analysis of chemical and structural environments using solid-state and liquid-state NMR.",
+    "skills.spectroscopyTitle": "Spectroscopic techniques",
+    "skills.structureTitle": "Structural analysis and microscopy",
+    "skills.thermalTitle": "Thermal and gas analysis",
+    "skills.adsorptionTitle": "Porosity and adsorption",
+    "skills.softwareLabel": "SOFTWARE",
+    "skills.legend": "Indicators: self-assessed practical experience on a scale of 1 to 5.",
 
-    "projects.eyebrow": "RESEARCH & EXPLORATION",
-    "projects.heading": "From scientific questions<br><em>to results.</em>",
-    "projects.intro": "Selected projects illustrating the research topics, methods and scientific questions I have worked on.",
-    "projects.p1cat": "PHD · MATERIALS FOR ENERGY",
-    "projects.p1title": "Al–N–H materials for chemical hydrogen storage",
-    "projects.p1desc": "Study of materials derived from ammonia alane, from the development of synthesis routes to structural and thermal characterization. Fundamental research aimed at addressing scientific challenges in the behaviour of these systems.",
-    "projects.more": "Read more",
-    "projects.p1detail": "The work focused on three synthesis strategies, the handling of air- and moisture-sensitive compounds, and the study of their behaviour during thermal treatment. Solid-state NMR, together with spectroscopic and thermal methods, was used to investigate chemical environments and material evolution.",
-    "projects.p2cat": "CEA GRENOBLE · POROUS MATERIALS",
-    "projects.p2title": "MOF materials for hydrogen adsorption",
-    "projects.p2desc": "Solvothermal synthesis of porous materials and investigation of the effect of nanoparticle impregnation on their adsorption properties.",
-    "projects.p3cat": "PERSONAL PROJECT · DIGITAL",
-    "projects.p3title": "Building a scientific portfolio",
-    "projects.p3desc": "Design of a personal digital space to organize, present and communicate a scientific and professional background.",
-    "projects.openeyebrow": "FUTURE DIRECTIONS",
-    "projects.opentitle": "An open field of exploration.",
-    "projects.openbody": "Catalysis, processes, functional materials, energy, the environment or new technologies: I want to keep learning and developing my skills through new challenges. The field matters less than the opportunity to contribute to a useful and tangible project.",
+    "projects.eyebrow": "PROJECTS & ACHIEVEMENTS",
+    "projects.heading": "Exploring different disciplines,<br><em>developing solutions.</em>",
+    "projects.intro": "Academic and personal projects illustrating the range of scientific topics explored throughout my background.",
+    "projects.academic": "SCIENTIFIC AND ACADEMIC PROJECTS",
+    "projects.personal": "PERSONAL AND DIGITAL PROJECTS",
+    "projects.details": "View project",
+    "projects.context": "Scientific context",
+    "projects.objectives": "Objectives and approach",
+    "projects.methods": "Methods considered",
+    "projects.approaches": "Approaches investigated",
+    "projects.outlook": "Development perspectives",
+
+    "projects.radioTitle": "Radioactivity and the environment: solubility of uranium-bearing phases",
+    "projects.radioSummary": "Undergraduate supervised project focused on natural radionuclides in the environment and a literature review of uranium- and thorium-bearing phases.",
+    "projects.radioContext": "Natural radioactivity is widespread in the environment. The literature review covered the main radioactive decay series, particularly those associated with ²³⁸U, ²³⁵U and ²³²Th, as well as alpha and beta decay processes leading to more stable isotopes.",
+    "projects.radioObjectives": "The project also examined naturally occurring uranium and thorium phases, their locations and abundances. A sampling campaign was considered around the Puech Buissou mine, upstream and downstream of the site, as well as at several locations: the Rhône, Espiguette beach in the Gard region and Collet-de-Dèze in Lozère.",
+    "projects.radioMethods": "The proposed protocol included the characterization of liquid and solid samples using PERALS alpha liquid scintillation and infrared spectroscopy. The project was part of an environmental analysis approach, with analyses associated with the CEA Marcoule site.",
+    "projects.radioStatus": "Supervised project: literature review and definition of an experimental approach. Sampling and analytical results are not presented here as completed work.",
+
+    "projects.coatingTitle": "Superhydrophobic polymer coatings for aircraft cockpit windows",
+    "projects.coatingSummary": "Study of functional coating solutions intended to reduce contamination and ice formation on aircraft windows.",
+    "projects.coatingContext": "This literature-based project investigated superhydrophobic polymer coatings for cockpit windows. The objective was to identify alternative solutions to reduce contamination and icing while taking real aeronautical operating constraints into account.",
+    "projects.coatingApproaches": "Several strategies were examined: hierarchical structures, nanoparticle incorporation, soft lithography and polymer nanocomposite formulations. One approach considered the combination of PDMS and SiO₂, with dip-coating or spray-deposition methods.",
+    "projects.coatingOutlook": "The study considered the feasibility of moving from laboratory scale to a pilot process and potentially to industrial production. 3D printing, material selection using CES EduPack and life-cycle assessment were also considered.",
+    "projects.coatingStatus": "Literature review and proposed development strategies; no finalized coating or industrialized process is claimed.",
+
+    "projects.microTitle": "Thin-film deposition by vacuum evaporation",
+    "projects.microSummary": "Cleanroom practical work involving thin-film deposition processes using vacuum evaporation.",
+
+    "projects.pvTitle": "Literature review of photovoltaic technologies",
+    "projects.pvSummary": "Analysis of photovoltaic cell technologies, their performance and research directions aimed at improving efficiency and durability.",
+    "projects.pvContext": "The study compared wafer-based technology, which has a significant market presence, with thin-film technologies. The latter may rely on less energy-intensive processes, although their efficiency remains an important development challenge.",
+    "projects.pvApproaches": "The literature review covered thermal management of photovoltaic cells, transparent coatings with antireflective, self-cleaning and anti-icing properties, and tandem cells combining several materials to overcome the efficiency limitations of conventional technologies.",
+    "projects.pvOutlook": "Recycling routes were also considered, including mechanical grinding, chemical or thermal delamination and the recovery of valuable materials such as silicon.",
+
+    "projects.inProgress": "PERSONAL PROJECT · IN PROGRESS",
+    "projects.portfolioTitle": "Design and development of this portfolio",
+    "projects.portfolioSummary": "Creation of a personal digital space to organize and showcase my scientific and professional background.",
+    "projects.financeTitle": "Stock portfolio management application",
+    "projects.financeSummary": "Development of an application to monitor and analyse an investment portfolio, centralizing financial data and monitoring indicators.",
 
     "education.eyebrow": "EDUCATION",
-    "education.heading": "Building a<br><em>scientific foundation.</em>",
+    "education.heading": "A multidisciplinary<br><em>scientific foundation.</em>",
     "education.degree1": "PhD in Materials Chemistry",
     "education.detail1": "Development of Al–N–H materials for chemical hydrogen storage.",
     "education.degree2": "Master's Degree in Chemistry and Materials Science",
@@ -92,73 +123,199 @@ const translations = {
     "publications.intro": "Three publications in the International Journal of Hydrogen Energy on Al–N–H materials derived from ammonia alane.",
     "publications.review": "REVIEW ARTICLE",
     "publications.article": "RESEARCH ARTICLE",
-    "publications.paper2": "Publication resulting from the collaboration with CEA Saclay",
-    "publications.paper3": "Publication resulting from the collaboration with CEA Saclay",
+    "publications.paper2": "Research article resulting from the collaboration with CEA Saclay",
+    "publications.paper3": "Research article resulting from the collaboration with CEA Saclay",
     "publications.note": "Full bibliographic references will be added after verification of the editorial metadata.",
 
-    "contact.eyebrow": "LET'S CONNECT",
-    "contact.heading": "What if we<br><em>built what comes next?</em>",
-    "contact.intro": "I welcome conversations about scientific projects, development and applied research. If you are working on an interesting challenge, I would be glad to discuss it.",
+    "interests.eyebrow": "BEYOND THE LABORATORY",
+    "interests.heading": "A curiosity that<br><em>extends beyond science.</em>",
+    "interests.sport": "Sports",
+    "interests.science": "Science",
+    "interests.astronomy": "Astronomy",
+    "interests.watch": "Scientific monitoring",
+    "interests.reading": "Reading",
+    "interests.genres": "Philosophy · Fantasy · Science fiction · Personal development",
+
+    "contact.eyebrow": "CONTACT",
+    "contact.heading": "Let's build<br><em>what comes next.</em>",
+    "contact.intro": "I welcome conversations about scientific projects, development and research and development. I would be glad to discuss new challenges and potential collaborations.",
     "contact.email": "Send me an email",
-    "contact.footer": "Scientific portfolio · 2026",
+    "contact.footer": "Professional portfolio · 2026",
     "contact.top": "Back to top ↑"
   }
 };
 
-// LANGUAGE
+
+/* =========================================================
+   TRADUCTION ET MÉMORISATION DE LA LANGUE
+========================================================= */
 
 const languageButton = document.getElementById("language-switch");
 
+const originalFrench = new Map();
+
+document.querySelectorAll("[data-i18n]").forEach(element => {
+  originalFrench.set(element, {
+    type: "text",
+    value: element.textContent
+  });
+});
+
+document.querySelectorAll("[data-i18n-html]").forEach(element => {
+  originalFrench.set(element, {
+    type: "html",
+    value: element.innerHTML
+  });
+});
+
+function getSavedLanguage() {
+  try {
+    return localStorage.getItem("portfolio-language") || "fr";
+  } catch {
+    return "fr";
+  }
+}
+
+function saveLanguage(language) {
+  try {
+    localStorage.setItem("portfolio-language", language);
+  } catch {
+    // Le site reste fonctionnel si le stockage local est indisponible.
+  }
+}
+
 function setLanguage(language) {
-  document.documentElement.lang = language;
+  const selectedLanguage = language === "en" ? "en" : "fr";
+  const dictionary = translations[selectedLanguage];
+
+  document.documentElement.lang = selectedLanguage;
 
   document.querySelectorAll("[data-i18n]").forEach(element => {
     const key = element.dataset.i18n;
-    if (language === "en" && translations.en[key]) {
-      element.textContent = translations.en[key];
-    } else {
-      // French is the original language in the HTML.
-      // Reloading the page restores the original French content.
-      element.textContent = element.dataset.fr || element.textContent;
+    const original = originalFrench.get(element);
+
+    if (selectedLanguage === "en" && dictionary[key]) {
+      element.textContent = dictionary[key];
+    } else if (original) {
+      element.textContent = original.value;
     }
   });
 
   document.querySelectorAll("[data-i18n-html]").forEach(element => {
     const key = element.dataset.i18nHtml;
-    if (language === "en" && translations.en[key]) {
-      element.innerHTML = translations.en[key];
-    } else {
-      element.innerHTML = element.dataset.fr || element.innerHTML;
+    const original = originalFrench.get(element);
+
+    if (selectedLanguage === "en" && dictionary[key]) {
+      element.innerHTML = dictionary[key];
+    } else if (original) {
+      element.innerHTML = original.value;
     }
   });
 
-  languageButton.textContent = language === "fr" ? "EN" : "FR";
+  languageButton.textContent = selectedLanguage === "fr" ? "EN" : "FR";
   languageButton.setAttribute(
     "aria-label",
-    language === "fr" ? "Switch to English" : "Passer en français"
+    selectedLanguage === "fr" ? "Switch to English" : "Passer en français"
   );
 
-  localStorage.setItem("portfolio-language", language);
+  saveLanguage(selectedLanguage);
 }
 
-// Store original French text before the first translation.
-document.querySelectorAll("[data-i18n]").forEach(element => {
-  element.dataset.fr = element.textContent;
-});
-
-document.querySelectorAll("[data-i18n-html]").forEach(element => {
-  element.dataset.fr = element.innerHTML;
-});
-
-const savedLanguage = localStorage.getItem("portfolio-language") || "fr";
-setLanguage(savedLanguage);
+setLanguage(getSavedLanguage());
 
 languageButton.addEventListener("click", () => {
-  const nextLanguage = document.documentElement.lang === "fr" ? "en" : "fr";
+  const nextLanguage =
+    document.documentElement.lang === "fr" ? "en" : "fr";
+
   setLanguage(nextLanguage);
 });
 
-// MOBILE MENU
+
+/* =========================================================
+   COMPÉTENCES : INDICATEURS CIRCULAIRES
+========================================================= */
+
+const skillLevels = {
+  "synthesis-ceramic": 5,
+  "synthesis-solvothermal": 5,
+  "lewis": 5,
+  "metathesis": 5,
+  "milling": 5,
+  "protocols": 5,
+  "inert": 5,
+
+  "nmr-solid": 5,
+  "nmr-mas": 5,
+  "cpmas": 5,
+  "mqmas": 4,
+  "nmr-liquid": 4,
+  "hetcor": 3,
+  "dmfit": 5,
+  "topspin": 3,
+
+  "ftir": 5,
+  "xps": 5,
+  "raman": 5,
+  "uv": 5,
+
+  "xrd": 4,
+  "sem": 4,
+
+  "tga": 5,
+  "dsc": 4,
+  "gcms": 4,
+
+  "bet": 4,
+  "pct": 4,
+  "gas": 5,
+
+  "origin": 5,
+  "omnic": 5,
+  "office": 5
+};
+
+function renderSkillIndicators() {
+  document.querySelectorAll("[data-skill]").forEach(element => {
+    const skillId = element.dataset.skill;
+    const level = skillLevels[skillId];
+
+    if (!level) return;
+
+    const dotContainer = element.querySelector(".skill-dots");
+    if (!dotContainer) return;
+
+    dotContainer.replaceChildren();
+
+    for (let i = 1; i <= 5; i++) {
+      const dot = document.createElement("span");
+      dot.className = "skill-dot";
+
+      if (i <= level) {
+        dot.classList.add("filled");
+      }
+
+      dot.setAttribute("aria-hidden", "true");
+      dotContainer.appendChild(dot);
+    }
+
+    dotContainer.setAttribute(
+      "aria-label",
+      `${level} sur 5`
+    );
+
+    element.setAttribute(
+      "aria-label",
+      `${element.querySelector("span:first-child").textContent} : ${level} sur 5`
+    );
+  });
+}
+
+renderSkillIndicators();
+
+
+/* =========================================================
+   MENU MOBILE
+========================================================= */
 
 const menuToggle = document.getElementById("menu-toggle");
 const mainNav = document.getElementById("main-nav");
@@ -188,10 +345,15 @@ mainNav.querySelectorAll("a").forEach(link => {
 });
 
 window.addEventListener("resize", () => {
-  if (window.innerWidth > 760) closeMenu();
+  if (window.innerWidth > 760) {
+    closeMenu();
+  }
 });
 
-// HEADER ON SCROLL
+
+/* =========================================================
+   HEADER AU DÉFILEMENT
+========================================================= */
 
 const header = document.querySelector(".site-header");
 
@@ -202,37 +364,162 @@ function updateHeader() {
 window.addEventListener("scroll", updateHeader, { passive: true });
 updateHeader();
 
-// ACTIVE NAVIGATION
+
+/* =========================================================
+   NAVIGATION ACTIVE
+========================================================= */
 
 const sections = document.querySelectorAll("main section[id]");
 const navLinks = document.querySelectorAll(".main-nav a");
 
-const observer = new IntersectionObserver(entries => {
+const sectionObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      navLinks.forEach(link => {
-        link.classList.toggle(
-          "active",
-          link.getAttribute("href") === `#${entry.target.id}`
-        );
-      });
-    }
+    if (!entry.isIntersecting) return;
+
+    navLinks.forEach(link => {
+      link.classList.toggle(
+        "active",
+        link.getAttribute("href") === `#${entry.target.id}`
+      );
+    });
   });
 }, {
   rootMargin: "-30% 0px -60% 0px",
   threshold: 0
 });
 
-sections.forEach(section => observer.observe(section));
+sections.forEach(section => sectionObserver.observe(section));
 
-// PROJECT DETAILS
+
+/* =========================================================
+   APPARITION DES ÉLÉMENTS AU DÉFILEMENT
+========================================================= */
+
+const revealElements = document.querySelectorAll(".reveal");
+const timelineItems = document.querySelectorAll(".timeline-item");
+
+const motionPreference = window.matchMedia(
+  "(prefers-reduced-motion: reduce)"
+);
+
+if ("IntersectionObserver" in window && !motionPreference.matches) {
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    });
+  }, {
+    threshold: 0.12,
+    rootMargin: "0px 0px -40px 0px"
+  });
+
+  revealElements.forEach(element => revealObserver.observe(element));
+
+  const timelineObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    });
+  }, {
+    threshold: 0.15,
+    rootMargin: "0px 0px -50px 0px"
+  });
+
+  timelineItems.forEach(item => timelineObserver.observe(item));
+} else {
+  revealElements.forEach(element => element.classList.add("is-visible"));
+  timelineItems.forEach(item => item.classList.add("is-visible"));
+}
+
+
+/* =========================================================
+   PROGRESSION DE LA FRISE CHRONOLOGIQUE
+========================================================= */
+
+const timeline = document.querySelector(".timeline");
+
+if (timeline) {
+  const progressLine = document.createElement("span");
+  progressLine.className = "timeline-progress";
+  progressLine.setAttribute("aria-hidden", "true");
+  timeline.prepend(progressLine);
+
+  let timelineFrame = null;
+
+  function updateTimelineProgress() {
+    if (motionPreference.matches) {
+      progressLine.style.height = "0";
+      return;
+    }
+
+    const rect = timeline.getBoundingClientRect();
+    const viewportPosition = window.innerHeight * 0.72;
+
+    const totalHeight = timeline.offsetHeight;
+    const passedHeight = Math.max(
+      0,
+      Math.min(totalHeight, viewportPosition - rect.top)
+    );
+
+    progressLine.style.height = `${passedHeight}px`;
+  }
+
+  function requestTimelineUpdate() {
+    if (timelineFrame !== null) return;
+
+    timelineFrame = window.requestAnimationFrame(() => {
+      updateTimelineProgress();
+      timelineFrame = null;
+    });
+  }
+
+  window.addEventListener("scroll", requestTimelineUpdate, {
+    passive: true
+  });
+
+  window.addEventListener("resize", requestTimelineUpdate);
+
+  updateTimelineProgress();
+}
+
+
+/* =========================================================
+   DÉTAILS DES PROJETS
+========================================================= */
 
 document.querySelectorAll(".project-toggle").forEach(button => {
   button.addEventListener("click", () => {
-    const target = document.getElementById(button.dataset.target);
+    const targetId = button.dataset.target;
+    const target = document.getElementById(targetId);
+
+    if (!target) return;
+
     const isExpanded = button.getAttribute("aria-expanded") === "true";
 
     button.setAttribute("aria-expanded", String(!isExpanded));
     target.hidden = isExpanded;
   });
+});
+
+
+/* =========================================================
+   MISE À JOUR DE L'ANNÉE DU PIED DE PAGE
+========================================================= */
+
+const currentYear = new Date().getFullYear();
+
+document.querySelectorAll(".contact-footer").forEach(footer => {
+  const yearLabel = footer.querySelector("[data-i18n='contact.footer']");
+
+  if (yearLabel) {
+    const language = document.documentElement.lang;
+
+    yearLabel.textContent = language === "en"
+      ? `Professional portfolio · ${currentYear}`
+      : `Portfolio professionnel · ${currentYear}`;
+  }
 });
