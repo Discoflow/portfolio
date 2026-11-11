@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
     "tga": 5,
     "dsc": 4,
 
-
     /* Adsorption */
     "bet": 4,
     "pct": 4,
@@ -180,13 +179,6 @@ document.addEventListener("DOMContentLoaded", () => {
       "projects.approaches": "Approches étudiées",
       "projects.outlook": "Perspectives de développement",
 
-      "projects.radioTitle": "Radioactivité et environnement : solubilité des phases uranifères",
-      "projects.radioSummary": "Projet tutoré consacré à la présence naturelle des radionucléides dans l'environnement et à l'étude bibliographique des phases uranifères et thorifères.",
-      "projects.radioContext": "La radioactivité naturelle est omniprésente dans l'environnement. L'étude bibliographique a porté sur les principales familles radioactives, notamment les séries associées aux isotopes ²³⁸U, ²³⁵U et ²³²Th, ainsi que sur les mécanismes de désintégration alpha et bêta conduisant à des isotopes plus stables.",
-      "projects.radioObjectives": "Le travail a consisté à étudier les différentes phases naturelles de l'uranium et du thorium, leurs localisations et leurs abondances. Une campagne de prélèvements a été effectuée autour de la mine de Puech Buissou, en amont et en aval du site, ainsi que sur plusieurs sites : la plage de l'Espiguette dans le Gard et le Collet-de-Dèze en Lozère.",
-      "projects.radioMethods": "Le protocole prévoyait la caractérisation d'échantillons liquides et solides par scintillation liquide alpha de type PERALS et par spectroscopie infrarouge. Le projet s'inscrivait dans une démarche d'analyse environnementale, avec des analyses faites au site du CEA Marcoule.",
-      "projects.radioStatus": "Projet tutoré : étude bibliographique et définition d'une démarche expérimentale. Les prélèvements et résultats analytiques ne sont pas présentés ici comme des travaux réalisés.",
-
       "projects.coatingTitle": "Revêtements polymères superhydrophobes pour les vitrages de cockpit",
       "projects.coatingSummary": "Étude de solutions de revêtements fonctionnels destinés à limiter l'encrassement et la formation de givre sur les vitrages aéronautiques.",
       "projects.coatingContext": "Ce travail bibliographique portait sur le développement de revêtements polymères superhydrophobes pour les vitres de cockpit. L'objectif était d'identifier des solutions alternatives pour limiter l'encrassement et le givrage, tout en tenant compte des contraintes d'utilisation réelles en aéronautique.",
@@ -203,6 +195,13 @@ document.addEventListener("DOMContentLoaded", () => {
       "projects.pvApproaches": "Les travaux bibliographiques abordaient la gestion thermique des cellules, le développement de revêtements transparents aux propriétés antireflet, autonettoyantes et antigivre, ainsi que les cellules tandem associant plusieurs matériaux pour dépasser les limites de rendement des technologies conventionnelles.",
       "projects.pvOutlook": "Les voies de recyclage ont également été étudiées, notamment le broyage, la délamination chimique ou thermique et la récupération de matériaux d'intérêt comme le silicium.",
 
+      "projects.radioTitle": "Radioactivité et environnement : solubilité des phases uranifères",
+      "projects.radioSummary": "Projet tutoré consacré à la présence naturelle des radionucléides dans l'environnement et à l'étude bibliographique des phases uranifères et thorifères.",
+      "projects.radioContext": "La radioactivité naturelle est omniprésente dans l'environnement. L'étude bibliographique a porté sur les principales familles radioactives, notamment les séries associées aux isotopes ²³⁸U, ²³⁵U et ²³²Th, ainsi que sur les mécanismes de désintégration alpha et bêta conduisant à des isotopes plus stables.",
+      "projects.radioObjectives": "Le travail a consisté à étudier les différentes phases naturelles de l'uranium et du thorium, leurs localisations et leurs abondances. Une campagne de prélèvements a été effectuée autour de la mine de Puech Buissou, en amont et en aval du site, ainsi que sur plusieurs sites : la plage de l'Espiguette dans le Gard et le Collet-de-Dèze en Lozère.",
+      "projects.radioMethods": "Le protocole prévoyait la caractérisation d'échantillons liquides et solides par scintillation liquide alpha de type PERALS et par spectroscopie infrarouge. Le projet s'inscrivait dans une démarche d'analyse environnementale, avec des analyses faites au site du CEA Marcoule.",
+      "projects.radioStatus": "Projet tutoré : étude bibliographique et définition d'une démarche expérimentale. Les prélèvements et résultats analytiques ne sont pas présentés ici comme des travaux réalisés.",
+       
       "projects.portfolioTitle": "Conception et développement de ce portfolio",
       "projects.portfolioSummary": "Création d'un espace numérique personnel pour structurer et valoriser mon parcours scientifique et professionnel.",
       "projects.financeTitle": "Application de gestion de portefeuille boursier",
