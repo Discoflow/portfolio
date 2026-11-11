@@ -15,21 +15,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const skillLevels = {
     /* Synthèse et élaboration */
-    "synthesis-ceramic": 5,
-    "synthesis-solvothermal": 5,
     "lewis": 5,
     "metathesis": 5,
     "milling": 5,
+    "synthesis-ceramic": 5,
+    "synthesis-solvothermal": 5,
     "protocols": 5,
     "inert": 5,
 
     /* RMN */
-    "nmr-solid": 5,
     "nmr-mas": 5,
-    "cpmas": 5,
     "mqmas": 4,
-    "nmr-liquid": 4,
+    "cpmas": 5,
     "hetcor": 3,
+    "nmr-liquid": 4,
 
     /* Spectroscopies */
     "ftir": 5,
@@ -42,14 +41,15 @@ document.addEventListener("DOMContentLoaded", () => {
     "sem": 4,
 
     /* Analyses thermiques et gazeuses */
+    "gcms": 5,
     "tga": 5,
     "dsc": 4,
-    "gcms": 4,
+
 
     /* Adsorption */
     "bet": 4,
     "pct": 4,
-    "gas": 5,
+    "gas": 4,
 
     /* Logiciels */
     "dmfit": 5,
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "hero.degree": "Docteur en chimie des matériaux",
       "hero.age": "28 ans",
       "hero.targetLabel": "POSTE RECHERCHÉ",
-      "hero.target": "Ingénieur Matériaux – R&D",
+      "hero.target": "INGÉNIERIE – R&D - EXPERTISE",
 
       "about.eyebrow": "PRÉSENTATION",
       "about.heading": "Comprendre le monde,<br><em>puis explorer.</em>",
@@ -260,7 +260,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "hero.degree": "PhD in Materials Chemistry",
       "hero.age": "28 years old",
       "hero.targetLabel": "TARGET POSITION",
-      "hero.target": "Materials Engineer – R&D",
+      "hero.target": "Engineering - R&D - Tecnhical Expertise",
 
       "about.eyebrow": "ABOUT",
       "about.heading": "A scientific background,<br><em>with an open-minded curiosity.</em>",
