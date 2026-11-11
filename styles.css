@@ -1974,4 +1974,21 @@ img {
         line-height: 1.8;
     }
 }
+/* =========================================================
+   IDENTITÉ VISUELLE — TOUS LES TITRES DE SECTIONS
+========================================================= */
 
+:root {
+    --section-number-color: #D58A65;
+    --section-label-color: #D58A65;
+}
+
+/* Numéros : 01, 02, 03... */
+.section-number {
+    color: var(--section-number-color);
+}
+
+/* Intitulés : PRÉSENTATION, EXPÉRIENCE, etc. */
+.section-heading .eyebrow {
+    color: var(--section-label-color);
+}
