@@ -561,7 +561,7 @@ img {
   gap: 9px;
   color: var(--text);
   font-family: var(--font-heading);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -711,8 +711,8 @@ img {
   padding: 7px 0;
   border-bottom: 1px solid rgba(254, 233, 225, .08);
   color: var(--text);
-  font-size: 11px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .skill-row:last-child,
@@ -940,7 +940,7 @@ img {
 .education-date {
   color: var(--gold);
   font-family: var(--font-heading);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -989,7 +989,7 @@ img {
 .publication-year {
   color: var(--gold);
   font-family: var(--font-heading);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -997,7 +997,7 @@ img {
   display: block;
   margin-bottom: 8px;
   color: var(--muted);
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: .13em;
 }
@@ -1089,7 +1089,7 @@ img {
 
 .interest-entry span:last-child {
   color: var(--gold);
-  font-size: 10px;
+  font-size: 12px;
   white-space: nowrap;
 }
 
@@ -1097,7 +1097,7 @@ img {
   max-width: 300px;
   margin: 0 0 20px;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.9;
 }
 
@@ -1109,7 +1109,7 @@ img {
   padding-top: 18px;
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .book-list span {
