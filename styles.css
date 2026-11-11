@@ -1919,3 +1919,59 @@ img {
     }
 }
 
+/* =========================================================
+   20. HARMONISATION DES TEXTES DESCRIPTIFS
+========================================================= */
+
+/* Couleur commune des textes descriptifs */
+:root {
+    --description-color: #C5C9D1;
+}
+
+/* Présentation */
+.about-detail p:not(.about-emphasis),
+
+/* Introduction des sections */
+.section-intro,
+
+/* Expériences professionnelles */
+.timeline-content > p:not(.timeline-place),
+.timeline-content ul,
+
+/* Compétences */
+.skill-family-description,
+
+/* Projets */
+.project-main > p:not(.project-category),
+.project-detail p,
+
+/* Formation */
+.education-item div > span,
+
+/* Centres d'intérêt */
+.interest-block > p,
+
+/* Contact */
+.contact-content > p:not(.eyebrow) {
+    color: var(--description-color);
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+/* Adaptation mobile */
+@media (max-width: 760px) {
+    .about-detail p:not(.about-emphasis),
+    .section-intro,
+    .timeline-content > p:not(.timeline-place),
+    .timeline-content ul,
+    .skill-family-description,
+    .project-main > p:not(.project-category),
+    .project-detail p,
+    .education-item div > span,
+    .interest-block > p,
+    .contact-content > p:not(.eyebrow) {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+}
+
