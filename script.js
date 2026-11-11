@@ -374,7 +374,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       "contact.eyebrow": "CONTACT",
       "contact.heading": "Let's build<br><em>what comes next.</em>",
-      "contact.intro": "I welcome conversations about scientific, development and R&D projects. I would be glad to discuss new challenges and potential opportunities for collaboration.",
+      "contact.intro": "I welcome conversations about scientific projects or potential collaboration opportunities.",
       "contact.email": "Send me an email",
       "contact.footer": "Professional portfolio",
       "contact.top": "Back to top ↑",
