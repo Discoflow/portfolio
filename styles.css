@@ -1983,12 +1983,12 @@ img {
     --section-label-color: #D58A65;
 }
 
-/* Numéros : 01, 02, 03... */
+/* Tous les numéros */
 .section-number {
-    color: var(--section-number-color);
+    color: var(--section-number-color) !important;
 }
 
-/* Intitulés : PRÉSENTATION, EXPÉRIENCE, etc. */
+/* Tous les intitulés */
 .section-heading .eyebrow {
-    color: var(--section-label-color);
+    color: var(--section-label-color) !important;
 }
