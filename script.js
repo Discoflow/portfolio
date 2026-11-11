@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "skills.thermalTitle": "Analyses thermiques et gazeuses",
       "skills.adsorptionTitle": "Porosité et adsorption",
       "skills.softwareLabel": "LOGICIELS",
-      "skills.legend": "Indicateurs : Niveau 1 Connaissance basique, Niveau 2 Intermédiaire, Niveau 3 Autonome, Niveau 4 Avancé, Niveau 5 Maitrise complète.",
+      "skills.legend": "Indicateurs : Niveau 1 Connaissance basique ; Niveau 2 Intermédiaire ; Niveau 3 Autonome ; Niveau 4 Avancé ; Niveau 5 Maitrise complète.",
 
       "projects.eyebrow": "PROJETS & RÉALISATIONS",
       "projects.heading": "Explorer différentes disciplines.<br>",
@@ -300,7 +300,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "skills.thermalTitle": "Thermal and gas analysis",
       "skills.adsorptionTitle": "Porosity and adsorption",
       "skills.softwareLabel": "SOFTWARE",
-      "skills.legend": "Indicators: self-assessed practical experience, on a scale from 1 to 5.",
+      "skills.legend": "Indicators: Level 1 Basic knowledge; Level 2 Intermediate; Level 3 Independent; Level 4 Advanced; Level 5 Complete mastery.",
 
       "projects.eyebrow": "PROJECTS & ACHIEVEMENTS",
       "projects.heading": "Exploring different disciplines,<br><em>developing solutions.</em>",
