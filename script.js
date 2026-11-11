@@ -30,8 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
     "mqmas": 4,
     "nmr-liquid": 4,
     "hetcor": 3,
-    "dmfit": 5,
-    "topspin": 3,
 
     /* Spectroscopies */
     "ftir": 5,
@@ -54,6 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "gas": 5,
 
     /* Logiciels */
+    "dmfit": 5,
     "origin": 5,
     "omnic": 5,
     "office": 5
@@ -165,7 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "skills.thermalTitle": "Analyses thermiques et gazeuses",
       "skills.adsorptionTitle": "Porosité et adsorption",
       "skills.softwareLabel": "LOGICIELS",
-      "skills.legend": "Indicateurs : niveau de pratique déclaré, sur une échelle de 1 à 5.",
+      "skills.legend": "Indicateurs : Niveau 1 Connaissance basique, Niveau 2 Intermédiaire, Niveau 3 Autonome, Niveau 4 Avancé, Niveau 5 Maitrise complète.",
 
       "projects.eyebrow": "PROJETS & RÉALISATIONS",
       "projects.heading": "Explorer différentes disciplines.<br>",
@@ -214,9 +213,9 @@ document.addEventListener("DOMContentLoaded", () => {
       "education.degree1": "Doctorat en chimie des matériaux",
       "education.detail1": "Développement de matériaux Al–N–H pour le stockage chimique de l'hydrogène.",
       "education.degree2": "Master Chimie et Sciences des matériaux",
-      "education.detail2": "Matériaux, fabrication additive, composites, membranes et mousses.",
+      "education.detail2": "Spécialités : Fabrication additive, composites, membranes et mousses.",
       "education.degree3": "Licence de chimie",
-      "education.detail3": "Formation générale en chimie.",
+      "education.detail3": "Formation générale en chimie puis chimie des matériaux en troisième année.",
 
       "publications.eyebrow": "PRODUCTION SCIENTIFIQUE",
       "publications.heading": "Partager et<br><em>transmettre les résultats.</em>",
@@ -224,7 +223,6 @@ document.addEventListener("DOMContentLoaded", () => {
       "publications.article": "ARTICLE DE RECHERCHE",
       "publications.paper2": "Al–N–H compounds derived from ammonia alane: Synthesis strategies and characterization",
       "publications.paper3": "Al−N−H compounds derived from ammonia alane: Solid-state NMR study of dehydrogenation-induced polymeric phases",
-      "publications.note": "Les références bibliographiques complètes seront ajoutées après vérification des métadonnées éditoriales.",
 
       "interests.eyebrow": "AU-DELÀ DU LABORATOIRE",
       "interests.heading": "Une curiosité qui<br><em>ne s'arrête pas à la chimie.</em>",
@@ -351,9 +349,9 @@ document.addEventListener("DOMContentLoaded", () => {
       "education.degree1": "PhD in Materials Chemistry",
       "education.detail1": "Development of Al–N–H materials for chemical hydrogen storage.",
       "education.degree2": "Master's degree in Chemistry and Materials Science",
-      "education.detail2": "Materials, additive manufacturing, composites, membranes and foams.",
+      "education.detail2": "Specialties: additive manufacturing, composites, membranes and foams.",
       "education.degree3": "Bachelor's degree in Chemistry",
-      "education.detail3": "Broad-based chemistry education.",
+      "education.detail3": "Broad-based chemistry education, followed by materials chemistry in the third year..",
 
       "publications.eyebrow": "SCIENTIFIC OUTPUT",
       "publications.heading": "Sharing and<br><em>communicating research.</em>",
@@ -361,7 +359,6 @@ document.addEventListener("DOMContentLoaded", () => {
       "publications.article": "RESEARCH ARTICLE",
       "publications.paper2": "Al–N–H compounds derived from ammonia alane: Synthesis strategies and characterization",
       "publications.paper3": "Al−N−H compounds derived from ammonia alane: Solid-state NMR study of dehydrogenation-induced polymeric phases",
-      "publications.note": "Full bibliographic references will be added after verification of the editorial metadata.",
 
       "interests.eyebrow": "BEYOND THE LABORATORY",
       "interests.heading": "A curiosity that<br><em>extends beyond chemistry.</em>",
