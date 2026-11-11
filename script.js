@@ -237,7 +237,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       "contact.eyebrow": "CONTACT",
       "contact.heading": "Construisons<br><em>la suite ensemble.</em>",
-      "contact.intro": "Je suis ouvert aux échanges autour de projets scientifiques, de développement et de recherche et développement. Je serais heureux de discuter de nouvelles problématiques et des possibilités de collaboration.",
+      "contact.intro": "Je suis ouvert aux échanges autour de projets scientifiques ou de possibles collaborations.",
       "contact.email": "M'écrire par e-mail",
       "contact.footer": "Portfolio professionnel",
       "contact.top": "Retour en haut ↑",
